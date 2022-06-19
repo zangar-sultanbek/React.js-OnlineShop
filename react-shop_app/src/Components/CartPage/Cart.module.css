@@ -1,0 +1,34 @@
+.cart_container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation: var(--animation-main);
+}
+.cart_items{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content_header{
+    margin-bottom: 1em;
+}
+.content_header > a{
+    color: var(--color-main);
+}
+
+@media screen and (max-width: 1024px){
+    .cart_items{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

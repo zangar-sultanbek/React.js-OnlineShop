@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*, *::before, *::after,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+:root{
+    --color-main: rgb(189, 30, 81);
+    --color-secondary: #490B3D;
+    --color-third: #F1B814;
+
+    --size-common: 16px;
+    --size-main: 18px;
+    --size-small: 12px;
+    --size-header: 55px;
+
+    --animation-main: carouselAnimation 1s normal;
+}
+/* body{
+    background-color: rgb(74, 78, 90);
+} */
+@keyframes carouselAnimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

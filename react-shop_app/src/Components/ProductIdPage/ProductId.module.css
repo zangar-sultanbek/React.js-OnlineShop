@@ -1,0 +1,121 @@
+.product_content{
+    width: 80%;
+    margin: 0 auto;
+}
+.product_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.product_header>span{
+    color: rgb(175, 175, 175)
+}
+.product_body{
+    margin-top: 2vh;
+    background-color: rgb(245, 245, 245);
+
+    display: flex;
+    flex-direction: row;
+    border-radius: .8em;
+}
+.product_display{
+    width: 40vw;
+    height: 70vh;
+}
+
+.product_display > img{
+    width: 100%;
+    height: 70vh;
+    border-radius: .8em 0 0 .8em;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.product_info{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product_info_description{
+    display: flex;  
+
+    width: 95%;
+    justify-content: space-between;
+    align-content: center;
+}
+.product_info_description_actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.product_actions_btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.product_actions_info > .product_price{
+    color: black;
+}
+.product_price_discounted{
+    color: var(--color-main);
+}
+.product_price_before{
+    color: gray;
+    text-decoration: line-through;
+
+    font-size: var(--size-common);
+}
+.product_price_discount{
+    font-size: var(--size-common);
+    background-color: var(--color-secondary);
+    display: inline-block;
+    width: fit-content;
+
+    background-color: var(--color-secondary);
+    color: white;
+    border-radius: 7px;
+    padding: 5px;
+}
+.cart_btn{
+    color: white;
+    font-size: 20px;
+    width: 70%;
+    margin: .5em auto 0 auto;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: .5em 0;
+    background-color: var(--color-main);
+    cursor: pointer;
+}
+.in_cart_btn{
+    color: white;
+    font-size: 20px;
+    width: 70%;
+    margin: .5em auto 0 auto;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: .5em 0;
+    background-color: var(--color-third);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.cart_btn:hover{
+    color: var(--color-main);
+    background-color: transparent;
+    border: 2px solid var(--color-main);
+}
+.in_cart_btn:hover{
+    color: var(--color-third);
+    background-color: transparent;
+    border: 2px solid var(--color-third);
+}

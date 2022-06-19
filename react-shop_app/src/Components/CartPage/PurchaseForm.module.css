@@ -1,0 +1,118 @@
+.form_modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(156, 156, 156, 0.45);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form_container{
+    border-radius: 10px;
+    background-color: white;
+    min-width: 30vw;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.form_content{
+    padding: 20px 0;
+    width: 95%;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    overflow-y: auto;
+}
+.form_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: inherit;
+    height: inherit;
+    
+    /* background-color: red; */
+}
+.form_data > input{
+    padding: .5em;
+    border: 2px solid rgb(194, 194, 194);
+    border-radius: 5px;
+}
+.form_data>*{
+    display: block;
+}
+.card_data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card_data>div>*{
+    display: block;
+}
+.form_close_btn{
+    position: absolute;
+    right: 4.5%;
+    top: .7em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: var(--size-main);
+    color: rgb(142, 142, 142);
+}
+.form_submit_btn{
+    font-size: var(--size-main);
+    border: none;
+    color: white;
+    padding: .5em 0;
+    border-radius: 5px;
+    background-color: var(--color-main);
+    cursor: pointer;
+}
+.form_submit_btn:hover{
+    background-color: rgb(177, 20, 70);
+}
+.form_submit_btn:disabled{
+    color: white;;
+    background-color: gray;
+}
+.form_submit_btn[disabled]:hover{
+
+    background-color: gray;
+}
+/*FORM*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 1124px){
+    .form_container{
+        min-width: 50vw;
+    }
+    .form_content{
+        width: 95%;
+        height: 100%;
+    }
+    .card_data{
+        flex-direction: column;
+    }
+    .card_data>div>*{
+        width: 40%;
+    }
+    
+}

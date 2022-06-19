@@ -1,0 +1,38 @@
+.header{
+    background-color: white;
+    padding: 25px 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.nav_bar{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    position: relative;
+}
+
+.nav_link{
+    font-size: var(--size-common);
+    color: black;
+    text-decoration: none;
+    padding: 0 2vh;
+    border-bottom: 1px solid transparent;
+}
+.nav_link:hover{
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* @media screen and (max-width: 512px){
+    .header{
+        padding: 20px 0;
+        position: sticky;
+        bottom: 0;
+        top: unset;
+        border-top: 1px solid rgba(128, 128, 128, .2);
+    }
+} */

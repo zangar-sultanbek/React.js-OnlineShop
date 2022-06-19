@@ -1,0 +1,26 @@
+.paginator_container{
+    width: 10%;
+    padding: 10px 0;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+.paginator_btn, .paginator_btn_selected{
+    padding: 3px 5px;
+    font-size: var(--size-normal);
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+.paginator_btn:hover{
+    border-bottom: 1px solid black;
+}
+
+.paginator_btn_selected{
+    background-color: var(--color-main);
+    color: white;
+    border-radius: 2px;
+}
