@@ -10,7 +10,7 @@ const Content = () => {
 
   useEffect(
     () => {
-      axios.get('https://newsapi.org/v2/everything?q=apple&from=2022-05-21&to=2022-05-21&sortBy=popularity&apiKey=7ecdec32d41c426fa985daa2a86ac3fa')
+      axios.get('https://newsapi.org/v2/everything?q=apple&from=2022-08-14&to=2022-08-14&sortBy=popularity&apiKey=7ecdec32d41c426fa985daa2a86ac3fa')
       .then(data => {
           data.data.articles.forEach(article => {
             setCarouselImages(prevImages => 

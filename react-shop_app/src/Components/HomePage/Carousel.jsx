@@ -5,6 +5,7 @@ const Carousel = ({carouselImages, currentImage,setCurrentImage}) => {
     const [isImageHovered, setIsImageHovered] = useState(() => false);
     function switchImage(e){
         const name = e?.target?.name;
+        
         if(name === "down_btn"){
             (currentImage > 0)
                 ? setCurrentImage(prev => prev - 1)
